@@ -27,8 +27,9 @@ class Creature : public Card {
   public:
     std::string type;         // Neutral, Red, Blue, Green, Yellow
     CreatureAbility* ability; // Defense, Support, Territory, First Attack
-    int hp;
-    int st;
+    int mhp; // Max Hit Points
+    int hp;  // Hit Points
+    int st;  // Strength
 }
 
 //================

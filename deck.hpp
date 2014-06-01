@@ -20,8 +20,8 @@ class Deck {
     std::vector<int> discard;
     std::vector<int> banished;
 
-    bool checkCardCount(Card* cards);
-    bool checkCardLimit(Card* cards);
+    int checkCardCount(Card* cards);
+    int checkCardLimit(Card* cards);
 }
 
 #endif

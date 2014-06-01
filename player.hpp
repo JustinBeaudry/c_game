@@ -14,9 +14,14 @@ class Deck;
 //===============
 class Player {
   public:
-    int id;
+
     std::string name;
+
+    int id;
     int current_magic;
+    //int game_ranking;
+    //int stock
+
     Library* library;
     Deck* active_deck;
 };
