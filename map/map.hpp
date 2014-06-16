@@ -8,16 +8,20 @@
 //  Forward declared dependencies
 //===============================  
 class Tile;
-class MapGraph;
+class Graph;
 
 class Map {
   public:
     const int id;
     std::string name;
 
-    MapGraph* map_graph;
+    Graph* map_graph;
     // a vector list of all the tiles, the index is the graph id
     std::vector< Tile*> tiles;
-}
+
+    Map(std::string mapname);
+    ~Map(void);
+    
+};
 
 #endif
