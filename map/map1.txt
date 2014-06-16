@@ -1,0 +1,15 @@
+Intro Map 1
+0	castle	1
+1	blue	2
+2	blue	3
+3	blue	4
+4	red	5
+5	red	6
+6	red	13
+7	yellow	8
+8	yellow	9
+9	yellow	10
+10	green	11
+11	green	12
+12	green	0
+13	tower	7
