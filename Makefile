@@ -26,31 +26,31 @@ map: main.o map.o map-graph.o
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp 
 
-cards.o:
+cards.o: cards.cpp
 	$(CC) $(CFLAGS) $(LIBRARY)/cards.cpp
 
-deck.o: cards.o
+deck.o: cards.o deck.cpp
 	$(CC) $(CFLAGS) $(LIBRARY)/deck.cpp
 
-library.o: deck.o
+library.o: deck.o library.cpp
 	$(CC) $(CFLAGS) $(LIBRARY)/library.cpp
 
-zone.o:
+zone.o: zone.cpp
 	$(CC) $(CFLAGS) $(MAP)/zone.cpp
 
-map-graph.o:
+map-graph.o: map-graph.cpp
 	$(CC) $(CFLAGS) $(MAP)/map-graph.cpp
 
-map.o: map-graph.o zone.o
+map.o: map-graph.o zone.o map.cpp
 	$(CC) $(CFLAGS) $(MAP)/map.cpp
 
-session.o:
+session.o: session.cpp
 	$(CC) $(CFLAGS) $(SESSION)/session.cpp
 
-player:
+player: player.coo
 	$(CC) $(CFLAGS) $(TOKEN)/player.cpp
 
-token: player.o
+token: player.o token.cpp
 	$(CC) $(CFLAGS) $(TOKEN)/token.cpp
 
 clean:
