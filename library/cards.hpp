@@ -6,20 +6,20 @@
 //===============================
 //  Forward declared dependencies
 //===============================  
-class CardEffect;
-class CreatureAbility;
+// class CardEffect;
+// class CreatureAbility;
+class CardType;
 
 //===========
 // Card Class
 //===========
-
 class Card {
   public:
     std::string name;
     int cost;
-    CardEffect* effect;
-    std::string type;         // Neutral, Red, Blue, Green, Yellow
-    CreatureAbility* ability; // Defense, Support, Territory, First Attack
+    //CardEffect* effect;
+    CardType* type;         // Neutral, Red, Blue, Green, Yellow
+    //CreatureAbility* ability; // Defense, Support, Territory, First Attack
     int mhp; // Max Hit Points
     int hp;  // Hit Points
     int st;  // Strength

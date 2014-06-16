@@ -22,6 +22,6 @@ class Deck {
 
     int checkCardCount(Card* cards);
     int checkCardLimit(Card* cards);
-}
+};
 
 #endif

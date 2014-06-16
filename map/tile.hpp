@@ -9,6 +9,7 @@
 class Monster;
 class Player;
 class Status;
+class TileType;
 class Zone;
 
 //============
@@ -16,14 +17,14 @@ class Zone;
 //============
 class Tile {
   public:
+    const int id;
     Monster* monster;
     std::vector< Player* > players;
     Status* status;
-    Type* type;
+    TileType* type;
     Zone* zone;
-    const int id;
     int value;
     int level;
-}
+};
 
 #endif

@@ -1,9 +1,19 @@
-##ifndef __ZONE_H__
-##define __ZONE_H__
+#ifndef __ZONE_H__
+#define __ZONE_H__
 
 #include <vector>
 
-class Zome {
+//===============================
+//  Forward declared dependencies
+//===============================  
+class Stock;
+
+class Zone {
   public:  
-    // @TODO 
-}
+    std::vector< Stock* > stocks;
+    // a vector of tile ids
+    std::vector<int> tile_ids; 
+
+};
+
+#endif

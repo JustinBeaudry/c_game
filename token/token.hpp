@@ -6,8 +6,12 @@
 //=============
 class Token {
   public:
-    virtual void move() {};
-    virtual void teleport() {};
+    virtual void move() {
+      //@TODO
+    };
+    virtual void teleport() {
+      //@TODO 
+    };
     int current_tile;
     int previous_tile;
 }
