@@ -4,6 +4,6 @@
 class MapGraph {
   public:
     // TODO 
-}
+};
 
 #endif
