@@ -7,14 +7,13 @@
 class Token {
   public:
     virtual void move() {
-      //@TODO
+      //  requires access to MapGraph
     };
     virtual void teleport() {
-      //@TODO 
+      //  requires access to MapGraph
     };
     int current_tile;
     int previous_tile;
 }
 
 #endif
-

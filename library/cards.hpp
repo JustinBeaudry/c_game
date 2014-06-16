@@ -23,6 +23,6 @@ class Card {
     int mhp; // Max Hit Points
     int hp;  // Hit Points
     int st;  // Strength
-}
+};
 //Creature, Scroll, Weapon, Armor, Accessory
 

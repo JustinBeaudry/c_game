@@ -8,10 +8,6 @@
 //===============================  
 class Deck;
 
-//==
-//    Library = Book
-//==
-
 //===============
 //  Library Class
 //===============
@@ -19,7 +15,7 @@ class Library {
   public:
     std::vector< Deck* > decks;
 
-    // @TODO:  more properties?
+    // TODO:  more properties?
 
     // give Deck ID, return Deck
     Deck* selectActiveDeck(int);
