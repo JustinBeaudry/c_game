@@ -17,53 +17,12 @@ class Card {
   public:
     std::string name;
     int cost;
-}
-
-//==================
-// Creature SubClass
-//==================
-
-class Creature : public Card {
-  public:
+    CardEffect* effect;
     std::string type;         // Neutral, Red, Blue, Green, Yellow
     CreatureAbility* ability; // Defense, Support, Territory, First Attack
     int mhp; // Max Hit Points
     int hp;  // Hit Points
     int st;  // Strength
 }
+//Creature, Scroll, Weapon, Armor, Accessory
 
-//================
-// Scroll SubClass
-//================
-
-class Scroll : public Card {
-  public:
-    CardEffect* effect;
-}
-
-//================
-// Weapon SubClass
-//================
-
-class Weapon : public Card {
-  public:
-    CardEffect* effect;
-}
-
-//===============
-// Armor SubClass
-//===============
-
-class Armor : public Card {
-  public:
-    CardEffect* effect;
-}
-
-//===================
-// Accessory SubClass
-//===================
-
-class Accessory : public Card {
-  public:
-    CardEffect* effect;
-}
