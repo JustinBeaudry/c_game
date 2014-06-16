@@ -2,16 +2,18 @@
 #define __PLAYER_H__
 
 #include <string>
+#include <vector>
 
 //===============================
 //  Forward declared dependencies
 //===============================  
 class Library;
 class Deck;
+class Tile;
 
-//===============
+//==============
 //  Player Class
-//===============
+//==============
 class Player {
   public:
 
@@ -19,9 +21,8 @@ class Player {
 
     int id;
     int current_magic;
-    //int game_ranking;
-    //int stock
-
+    std::vector< Tile* > visited_tiles;
+    
     Library* library;
     Deck* active_deck;
 };
