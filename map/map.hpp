@@ -9,6 +9,7 @@
 //  Forward declared dependencies
 //===============================  
 class Tile;
+class MapGraph;
 class Graph;
 
 class Map {
@@ -19,6 +20,7 @@ class Map {
     NGraph::Graph* map_graph;
     // a vector list of all the tiles, the index is the graph id
     std::vector< Tile*> tiles;
+    std::vector< Zone* > zones;
 
     Map(std::string mapname);
     ~Map(void);

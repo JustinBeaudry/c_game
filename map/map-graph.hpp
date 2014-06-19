@@ -2,7 +2,8 @@
 #define __MAPGRAPH_H__
 
 class MapGraph {
-  // @TODO 
-}
+  public:
+    // TODO 
+};
 
 #endif

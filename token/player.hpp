@@ -3,10 +3,12 @@
 
 #include <string>
 #include <vector>
+#include "token.hpp"
 
 //===============================
 //  Forward declared dependencies
-//===============================  
+//===============================
+class Token;
 class Library;
 class Deck;
 class Tile;
@@ -14,9 +16,8 @@ class Tile;
 //==============
 //  Player Class
 //==============
-class Player {
+class Player : public Token {
   public:
-
     std::string name;
 
     int id;
