@@ -39,7 +39,7 @@ Tile::Tile(int id, std::string type):id(id),type(type) {
 
 
 std::ostream& operator<< (std::ostream& os, const Tile& tile) {
-  os << tile.id << " " << tile.level << " " << tile.value << std::endl;
+  os << tile.id << " " << tile.type<< " " << tile.level << " " << tile.value << std::endl;
   return os;
 }
 #endif
