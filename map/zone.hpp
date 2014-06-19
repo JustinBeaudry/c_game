@@ -1,9 +1,11 @@
-##ifndef __ZONE_H__
-##define __ZONE_H__
+#ifndef __ZONE_H__
+#define __ZONE_H__
 
 #include <vector>
 
-class Zome {
+class Zone {
   public:  
     // @TODO 
 }
+
+#endif
