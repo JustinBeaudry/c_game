@@ -3,6 +3,11 @@
 
 #include <vector>
 
+class Zone {
+  public:  
+    // @TODO 
+}
+=======
 //===============================
 //  Forward declared dependencies
 //===============================  
