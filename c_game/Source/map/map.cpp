@@ -1,26 +1,37 @@
 #include "map.hpp"
 #include "ngraph.hpp"
 #include "tile.hpp"
-#include "../util.hpp"
+//#include "../util.hpp"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <string>
+#include "../JuceLibraryCode/JuceHeader.h"
 
 using namespace std;
 
 Map::~Map(void) { }
 
-Map::Map(string mapname) {
+Map::Map(String mapname) {
 
-  std::ifstream infile;
-  infile.open(mapname.c_str());
-  getline(infile,name); 
+  //std::ifstream infile;
+  //infile.open(mapname.c_str());
+  //getline(infile,name);
+  File infile = File(mapname);
+  StringArray map_lines = StringArray();
+  infile.readLines(map_lines);
   map_graph = new NGraph::Graph;
   map_graph->set_undirected();
 
-  string tile_def;
-  getline(infile,tile_def);
+
+  for (String* lines = map_lines.begin(); lines!=map_lines.end(); lines++) {
+    if(lines == map_lines.begin())
+      name = *lines;
+    StringArray tile_def = StringArray();
+    tile_def.addTokens(*lines, "\t","");
+    
+  }
+  /*
   while(!infile.eof()) {
     vector<string> parts = split(tile_def,"\t");
     int id;
@@ -39,6 +50,7 @@ Map::Map(string mapname) {
     cout << *cur_tile;
     getline(infile,tile_def);
   }
+  */
 
 }
 
