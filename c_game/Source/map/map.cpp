@@ -29,7 +29,17 @@ GameMap::GameMap(String mapname) {
       name = *lines;
     StringArray tile_def = StringArray();
     tile_def.addTokens(*lines, "\t","");
+    int id = tile_def[0].getIntValue();
+    String tile_type = tile_def[1];
+    StringArray connections = StringArray();
+    connections.addTokens(tile_def[2],",","");
+    for(String* node = connections.begin(); node!=connections.end(); node++) {
+      map_graph->insert_edge(id, node->getIntValue());
+    }
     
+    Tile* cur_tile = new Tile(id, tile_type);
+    tiles.add(cur_tile);
+    cout << *cur_tile;
   }
   /*
   while(!infile.eof()) {

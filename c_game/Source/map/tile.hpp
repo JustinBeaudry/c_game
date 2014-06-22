@@ -22,17 +22,17 @@ class Tile {
     //Status* status;
     //Type* type;
     //Zone* zone;
-    std::string type;
+    String type;
     const int id;
     int value;
     int level;
 
-    Tile(int,std::string);
+    Tile(int,String);
   
     friend std::ostream& operator<< (std::ostream& os, const Tile& tile);
 };
 
-Tile::Tile(int id, std::string type):id(id),type(type) {
+Tile::Tile(int id, String type):id(id),type(type) {
   value = 100;
   level = 1;
 }
