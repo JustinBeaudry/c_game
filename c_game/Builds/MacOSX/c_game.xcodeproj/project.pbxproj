@@ -24,6 +24,7 @@
 		9038045B1956C4E2005C8CF4 /* map1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 903804491956C4E2005C8CF4 /* map1.txt */; };
 		9038045E1956C4E2005C8CF4 /* session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804501956C4E2005C8CF4 /* session.cpp */; };
 		9038045F1956C4E2005C8CF4 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804541956C4E2005C8CF4 /* player.cpp */; };
+		903804681956D797005C8CF4 /* token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804671956D797005C8CF4 /* token.cpp */; };
 		96C2E04949C06CF7D1574F0C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21EEE271F0B210C9D955595 /* IOKit.framework */; };
 		9C896E758A60411DC1CFCAA5 /* juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D5224F97A59E355FE205C /* juce_audio_basics.mm */; };
 		A42F42721A858291A15C46EF /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D161822B6A7EA1FC000F8CDC /* Main.cpp */; };
@@ -553,6 +554,7 @@
 		903804611956C4EF005C8CF4 /* cards.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cards.hpp; sourceTree = "<group>"; };
 		903804621956C4EF005C8CF4 /* deck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = deck.hpp; sourceTree = "<group>"; };
 		903804631956C4EF005C8CF4 /* library.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = library.hpp; sourceTree = "<group>"; };
+		903804671956D797005C8CF4 /* token.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = token.cpp; sourceTree = "<group>"; };
 		90F769BDDF98074AD02B26AA /* juce_StringArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_StringArray.cpp; path = ../../JuceLibraryCode/modules/juce_core/text/juce_StringArray.cpp; sourceTree = SOURCE_ROOT; };
 		916744282083D1BB0ABF55FF /* juce_TabbedButtonBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_TabbedButtonBar.h; path = ../../JuceLibraryCode/modules/juce_gui_basics/layout/juce_TabbedButtonBar.h; sourceTree = SOURCE_ROOT; };
 		919E84E1A86E87FACC175B50 /* juce_audio_basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_audio_basics.h; path = ../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h; sourceTree = SOURCE_ROOT; };
@@ -1865,6 +1867,7 @@
 				903804541956C4E2005C8CF4 /* player.cpp */,
 				903804551956C4E2005C8CF4 /* player.hpp */,
 				903804561956C4E2005C8CF4 /* token.hpp */,
+				903804671956D797005C8CF4 /* token.cpp */,
 			);
 			name = token;
 			path = ../../Source/token;
@@ -2762,6 +2765,7 @@
 				488F328A89697A0E5CB278F5 /* juce_gui_extra.mm in Sources */,
 				F27436F821CA5B03D41265F1 /* juce_opengl.mm in Sources */,
 				CEF43850271E51B5E2DDE232 /* juce_video.mm in Sources */,
+				903804681956D797005C8CF4 /* token.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

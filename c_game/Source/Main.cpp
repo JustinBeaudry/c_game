@@ -9,6 +9,8 @@
 */
 
 #include "../JuceLibraryCode/JuceHeader.h"
+#include "map/map.hpp"
+#include "token/player.hpp"
 #include "session/session.hpp"
 
 //==============================================================================

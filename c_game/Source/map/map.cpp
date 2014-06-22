@@ -10,9 +10,9 @@
 
 using namespace std;
 
-Map::~Map(void) { }
+GameMap::~GameMap(void) { }
 
-Map::Map(String mapname) {
+GameMap::GameMap(String mapname) {
 
   //std::ifstream infile;
   //infile.open(mapname.c_str());
