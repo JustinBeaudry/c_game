@@ -19,7 +19,6 @@
 		6FA1C38A8860FF9F7996869C /* juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8E30D25D382E9327B583096 /* juce_gui_basics.mm */; };
 		84FE55CB28BC5F933BBFBC02 /* juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7D7A20945798F3E02CF6A70A /* juce_audio_devices.mm */; };
 		903804571956C4E2005C8CF4 /* a.out in Resources */ = {isa = PBXBuildFile; fileRef = 903804431956C4E2005C8CF4 /* a.out */; };
-		903804581956C4E2005C8CF4 /* map-graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804441956C4E2005C8CF4 /* map-graph.cpp */; };
 		903804591956C4E2005C8CF4 /* map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804461956C4E2005C8CF4 /* map.cpp */; };
 		9038045A1956C4E2005C8CF4 /* map1.json in Resources */ = {isa = PBXBuildFile; fileRef = 903804481956C4E2005C8CF4 /* map1.json */; };
 		9038045B1956C4E2005C8CF4 /* map1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 903804491956C4E2005C8CF4 /* map1.txt */; };
@@ -538,8 +537,6 @@
 		8F4B64D77491AA01183F763A /* juce_FileBasedDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_FileBasedDocument.h; path = ../../JuceLibraryCode/modules/juce_gui_extra/documents/juce_FileBasedDocument.h; sourceTree = SOURCE_ROOT; };
 		8F52580E25F7AD23998D8ACE /* juce_StringPool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_StringPool.h; path = ../../JuceLibraryCode/modules/juce_core/text/juce_StringPool.h; sourceTree = SOURCE_ROOT; };
 		903804431956C4E2005C8CF4 /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
-		903804441956C4E2005C8CF4 /* map-graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "map-graph.cpp"; sourceTree = "<group>"; };
-		903804451956C4E2005C8CF4 /* map-graph.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = "map-graph.hpp"; sourceTree = "<group>"; };
 		903804461956C4E2005C8CF4 /* map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; path = map.cpp; sourceTree = "<group>"; tabWidth = 2; };
 		903804471956C4E2005C8CF4 /* map.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = map.hpp; sourceTree = "<group>"; };
 		903804481956C4E2005C8CF4 /* map1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = map1.json; sourceTree = "<group>"; };
@@ -1839,8 +1836,6 @@
 			isa = PBXGroup;
 			children = (
 				903804431956C4E2005C8CF4 /* a.out */,
-				903804441956C4E2005C8CF4 /* map-graph.cpp */,
-				903804451956C4E2005C8CF4 /* map-graph.hpp */,
 				903804461956C4E2005C8CF4 /* map.cpp */,
 				903804471956C4E2005C8CF4 /* map.hpp */,
 				903804481956C4E2005C8CF4 /* map1.json */,
@@ -2761,7 +2756,6 @@
 				64934831779FF99BDBE2490F /* juce_cryptography.mm in Sources */,
 				2EF4800FA3E7BF3F9F871F65 /* juce_data_structures.mm in Sources */,
 				F4AEF9214058EADCD61CBB31 /* juce_events.mm in Sources */,
-				903804581956C4E2005C8CF4 /* map-graph.cpp in Sources */,
 				9038045E1956C4E2005C8CF4 /* session.cpp in Sources */,
 				3F135CEFA9CBD1FEDFE6FEC4 /* juce_graphics.mm in Sources */,
 				6FA1C38A8860FF9F7996869C /* juce_gui_basics.mm in Sources */,
