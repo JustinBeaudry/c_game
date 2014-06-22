@@ -9,6 +9,7 @@ class GameSession {
   public:
     int session_id;
     int random_seed;
+    Random rand;
     int round;
     //std::vector< battleEffects> global_battle_effects
     //std::vector< > global_effects
