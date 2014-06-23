@@ -11,9 +11,10 @@
 #include "GameCommand.hpp"
 #include "../session/session.hpp"
 class MovePlayer : GameCommand {
-  
+public:
   MovePlayer(Player* player);
-  void execute(&GameSession world);
+  void execute(GameSession* world);
+  ~MovePlayer();
   
   
 };

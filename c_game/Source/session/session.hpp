@@ -15,7 +15,7 @@ class GameSession {
     //std::vector< > global_effects
     int turn;
     
-    Array< Player* > players;
+    OwnedArray<Player> players;
     GameMap* map;
 
     GameSession(void);

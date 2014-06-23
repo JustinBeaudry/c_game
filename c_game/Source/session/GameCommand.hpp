@@ -9,10 +9,11 @@
 #ifndef c_game_GameCommand_hpp
 #define c_game_GameCommand_hpp
 
+class GameSession;
+
 class GameCommand {
-  
-  virtual void execute(&GameSession);
-  
+public:
+  virtual void execute(GameSession* world) = 0;
 };
 
 
