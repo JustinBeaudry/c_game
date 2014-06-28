@@ -3,23 +3,28 @@
 
 #include <vector>
 #include <string>
+#include "ngraph.hpp"
 
 //===============================
 //  Forward declared dependencies
 //===============================  
 class Tile;
 class MapGraph;
-class Zone;
+class Graph;
 
 class Map {
   public:
-    const int id;
+    int id;
     std::string name;
 
-    MapGraph* map_graph;
+    NGraph::Graph* map_graph;
     // a vector list of all the tiles, the index is the graph id
     std::vector< Tile*> tiles;
     std::vector< Zone* > zones;
-}
+
+    Map(std::string mapname);
+    ~Map(void);
+    
+};
 
 #endif
