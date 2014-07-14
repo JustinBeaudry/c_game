@@ -3,6 +3,7 @@
 GameSession::GameSession() {
   session_id  = 1;
   random_seed = 4;
+  rand = Random(random_seed);
   std::cout << "Hell0 Juce!";
 
 }

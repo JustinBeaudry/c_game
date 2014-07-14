@@ -5,38 +5,38 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>502CC7D5-ACC5-4D91-AF20-D62992AD175F</string>
+	<string>5BE2CEF8-2822-47A3-8FDC-B623FED9A198</string>
 	<key>IDESourceControlProjectName</key>
 	<string>c_game</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CDEC4E4C-AF92-4030-8DC8-A8156E99B93A</key>
-		<string>ssh://github.com/JustinBeaudry/c_game.git</string>
 		<key>D007491A-ADA7-4FCD-BC62-DCE1E20D2FB1</key>
 		<string>git://github.com/julianstorer/JUCE.git</string>
+		<key>DD24ABF6-26CE-4D9F-BCD1-3A964391D80F</key>
+		<string>ssh://github.com/hath995/c_game.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>c_game/Builds/MacOSX/c_game.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CDEC4E4C-AF92-4030-8DC8-A8156E99B93A</key>
-		<string>../../../../..</string>
 		<key>D007491A-ADA7-4FCD-BC62-DCE1E20D2FB1</key>
 		<string>../../../../../JUCE</string>
+		<key>DD24ABF6-26CE-4D9F-BCD1-3A964391D80F</key>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/JustinBeaudry/c_game.git</string>
+	<string>ssh://github.com/hath995/c_game.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CDEC4E4C-AF92-4030-8DC8-A8156E99B93A</string>
+	<string>DD24ABF6-26CE-4D9F-BCD1-3A964391D80F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CDEC4E4C-AF92-4030-8DC8-A8156E99B93A</string>
+			<string>DD24ABF6-26CE-4D9F-BCD1-3A964391D80F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>c_game</string>
 		</dict>

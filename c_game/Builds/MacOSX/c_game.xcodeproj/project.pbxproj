@@ -24,6 +24,8 @@
 		9038045E1956C4E2005C8CF4 /* session.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804501956C4E2005C8CF4 /* session.cpp */; };
 		9038045F1956C4E2005C8CF4 /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804541956C4E2005C8CF4 /* player.cpp */; };
 		903804681956D797005C8CF4 /* token.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 903804671956D797005C8CF4 /* token.cpp */; };
+		9038046E19578E05005C8CF4 /* MovePlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9038046C19578E05005C8CF4 /* MovePlayer.cpp */; };
+		90AA78EC1962A8F800A8F3F1 /* deck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90AA78EA1962A8F800A8F3F1 /* deck.cpp */; };
 		96C2E04949C06CF7D1574F0C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21EEE271F0B210C9D955595 /* IOKit.framework */; };
 		9C896E758A60411DC1CFCAA5 /* juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9C8D5224F97A59E355FE205C /* juce_audio_basics.mm */; };
 		A42F42721A858291A15C46EF /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D161822B6A7EA1FC000F8CDC /* Main.cpp */; };
@@ -553,6 +555,10 @@
 		903804621956C4EF005C8CF4 /* deck.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = deck.hpp; sourceTree = "<group>"; };
 		903804631956C4EF005C8CF4 /* library.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = library.hpp; sourceTree = "<group>"; };
 		903804671956D797005C8CF4 /* token.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = token.cpp; sourceTree = "<group>"; };
+		9038046919575A88005C8CF4 /* GameCommand.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = GameCommand.hpp; path = ../session/GameCommand.hpp; sourceTree = "<group>"; };
+		9038046B19575C05005C8CF4 /* MovePlayer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MovePlayer.hpp; sourceTree = "<group>"; };
+		9038046C19578E05005C8CF4 /* MovePlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MovePlayer.cpp; sourceTree = "<group>"; };
+		90AA78EA1962A8F800A8F3F1 /* deck.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deck.cpp; sourceTree = "<group>"; };
 		90F769BDDF98074AD02B26AA /* juce_StringArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_StringArray.cpp; path = ../../JuceLibraryCode/modules/juce_core/text/juce_StringArray.cpp; sourceTree = SOURCE_ROOT; };
 		916744282083D1BB0ABF55FF /* juce_TabbedButtonBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_TabbedButtonBar.h; path = ../../JuceLibraryCode/modules/juce_gui_basics/layout/juce_TabbedButtonBar.h; sourceTree = SOURCE_ROOT; };
 		919E84E1A86E87FACC175B50 /* juce_audio_basics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_audio_basics.h; path = ../../../JUCE/modules/juce_audio_basics/juce_audio_basics.h; sourceTree = SOURCE_ROOT; };
@@ -1875,10 +1881,22 @@
 			children = (
 				903804611956C4EF005C8CF4 /* cards.hpp */,
 				903804621956C4EF005C8CF4 /* deck.hpp */,
+				90AA78EA1962A8F800A8F3F1 /* deck.cpp */,
 				903804631956C4EF005C8CF4 /* library.hpp */,
 			);
 			name = library;
 			path = ../../Source/library;
+			sourceTree = "<group>";
+		};
+		9038046A19575B97005C8CF4 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				9038046919575A88005C8CF4 /* GameCommand.hpp */,
+				9038046B19575C05005C8CF4 /* MovePlayer.hpp */,
+				9038046C19578E05005C8CF4 /* MovePlayer.cpp */,
+			);
+			name = Commands;
+			path = ../../Source/Commands;
 			sourceTree = "<group>";
 		};
 		9535057549C00DF147B73E4F /* positioning */ = {
@@ -2197,6 +2215,7 @@
 		BFABE93352CC8C93C2375448 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9038046A19575B97005C8CF4 /* Commands */,
 				903804601956C4EF005C8CF4 /* library */,
 				903804421956C4E2005C8CF4 /* map */,
 				9038044D1956C4E2005C8CF4 /* session */,
@@ -2745,12 +2764,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A42F42721A858291A15C46EF /* Main.cpp in Sources */,
+				9038046E19578E05005C8CF4 /* MovePlayer.cpp in Sources */,
 				9C896E758A60411DC1CFCAA5 /* juce_audio_basics.mm in Sources */,
 				9038045F1956C4E2005C8CF4 /* player.cpp in Sources */,
 				84FE55CB28BC5F933BBFBC02 /* juce_audio_devices.mm in Sources */,
 				CACDCF1C4EB78F19465B8132 /* juce_audio_formats.mm in Sources */,
 				E8ACD8D558065ACBE43E8DBE /* juce_audio_processors.mm in Sources */,
 				ACFE846108698A5814FFA502 /* juce_core.mm in Sources */,
+				90AA78EC1962A8F800A8F3F1 /* deck.cpp in Sources */,
 				903804591956C4E2005C8CF4 /* map.cpp in Sources */,
 				64934831779FF99BDBE2490F /* juce_cryptography.mm in Sources */,
 				2EF4800FA3E7BF3F9F871F65 /* juce_data_structures.mm in Sources */,

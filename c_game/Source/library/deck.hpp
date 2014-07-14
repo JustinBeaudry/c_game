@@ -1,7 +1,7 @@
 #ifndef __DECK_H__
 #define __DECK_H__
+#include "../JuceLibraryCode/JuceHeader.h"
 
-#include <vector>
 
 //===============================
 //  Forward declared dependencies
@@ -13,15 +13,16 @@ class Card;
 //===========
 class Deck {
   public:
-    std::vector< Card* > cards; 
-    
-    // a vector of ids 
-    std::vector<int> in_hand;
-    std::vector<int> discard;
-    std::vector<int> banished;
+    Array< Card* > cards;
+    Array< Card* > currentdeck;
+    // a vector of ids
+    Array<int> in_hand;
+    Array<int> discard;
+    Array<int> banished;
 
     int checkCardCount(Card* cards);
     int checkCardLimit(Card* cards);
+    bool shuffleDeck(void);
 };
 
 #endif

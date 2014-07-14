@@ -28,7 +28,7 @@ public:
     void initialise (const String& commandLine) override
     {
         GameSession Session = GameSession();
-        GameMap testmap = GameMap(String("/Users/Aaron-home/code/c_game/c_game/Source/map/map1.txt"));
+        GameMap testmap(String("/Users/Aaron-home/code/c_game/c_game/Source/map/map1.txt"));
                 // Add your application's initialisation code here..
     }
 

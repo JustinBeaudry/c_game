@@ -18,7 +18,7 @@ class GameMap {
 
     NGraph::Graph* map_graph;
     // a vector list of all the tiles, the index is the graph id
-    Array< Tile*> tiles;
+    OwnedArray< Tile> tiles;
     //std::vector< Zone* > zones;
 
     GameMap(String mapname);
